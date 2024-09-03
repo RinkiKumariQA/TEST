@@ -9,7 +9,7 @@ import Utilities_File.Data_Driven_Class;
 public class TestCase extends BaseClass
 {
 
-	@Test(dataProvider="datapro")
+	@Test(dataProvider="datapro1")
 	void logiCase(String user,String pass)
 	{ 
 		driver.get(url);
@@ -20,7 +20,7 @@ public class TestCase extends BaseClass
 	}
 	
 	
-@DataProvider(name="datapro")
+@DataProvider(name="datapro1")
 	public String[][] getData() throws Exception
 				{
 					String file_name="C:\\Users\\RINKI\\Desktop\\TestData.xlsx";
